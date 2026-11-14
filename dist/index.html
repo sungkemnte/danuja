@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rey works on operational data, payroll checks, and internal tools.">
+  <meta name="theme-color" content="#121212">
+  <title>Rey · Creative technologist</title>
+  <link rel="icon" href="data:,">
+  <link rel="preload" href="assets/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=9">
+  <script src="site.js?v=6" defer></script>
+</head>
+<body>
+<main id="home" tabindex="-1">
+<div class="frame">
+<details class="site-menu">
+  <summary aria-label="Menu">
+    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <path d="M4 6h16M4 12h16M4 18h16"/>
+    </svg>
+  </summary>
+  <nav aria-label="Main navigation">
+    <a href="#home" aria-current="page">Home</a>
+    <button type="button" data-dialog="login" commandfor="login" command="show-modal" aria-haspopup="dialog">Login</button>
+  </nav>
+</details>
+<section class="content" aria-labelledby="hero-title">
+<svg class="hero-waves" viewBox="0 0 720 680" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="wave-silver" x2="0" y2="1">
+      <stop class="wave-silver-start" stop-opacity=".68"/>
+      <stop class="wave-silver-mid" offset=".48"/>
+      <stop class="wave-end" offset="1"/>
+    </linearGradient>
+    <linearGradient id="wave-charcoal" x2="0" y2="1">
+      <stop class="wave-charcoal-start"/>
+      <stop class="wave-charcoal-mid" offset=".48"/>
+      <stop class="wave-end" offset="1"/>
+    </linearGradient>
+    <linearGradient id="wave-orange" x2="0" y2="1">
+      <stop class="wave-orange-start" stop-opacity=".82"/>
+      <stop class="wave-orange-mid" offset=".34"/>
+      <stop class="wave-end" offset="1"/>
+    </linearGradient>
+    <path id="wave-foreground" d="M0 506 C130 562 248 562 372 506 S590 450 720 506 S968 562 1092 506 S1310 450 1440 506 V680 H0Z"/>
+  </defs>
+  <g class="wave-back">
+    <path fill="url(#wave-silver)" d="M0 286 C124 242 246 242 362 286 S596 330 720 286 S966 242 1082 286 S1316 330 1440 286 V680 H0Z"/>
+  </g>
+  <g class="wave-middle">
+    <path fill="url(#wave-charcoal)" d="M0 404 C126 450 256 458 376 404 S594 358 720 404 S976 458 1096 404 S1314 358 1440 404 V680 H0Z"/>
+  </g>
+  <g class="wave-front">
+    <use href="#wave-foreground" fill="url(#wave-silver)"/>
+    <use class="wave-amber" href="#wave-foreground" fill="url(#wave-orange)"/>
+  </g>
+</svg>
+<h1 id="hero-title"><span class="hello">Hi, I’m Rey.</span>Creative<br>technologist.</h1>
+<p class="intro">I work on the details that make work easier. Operational data, payroll checks, and internal tools people can find their way around.</p>
+<div class="actions"><button type="button" class="cta" data-dialog="contact" commandfor="contact" command="show-modal" aria-haspopup="dialog">Discuss a workflow</button></div>
+</section>
+<section class="photo" aria-label="Areas of work" data-expanded>
+<img src="assets/architecture.jpg" width="1600" height="2400" fetchpriority="high" alt="">
+<div class="photo-top"><button type="button" class="about" aria-expanded="true" aria-controls="work-services">Areas of work<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg></button></div>
+<ol id="work-services" class="services" role="list"><li class="service"><span class="number" aria-hidden="true">01</span><div><h2>Operational data</h2><p>Checking, reconciliation &amp; repair</p></div></li>
+<li class="service"><span class="number" aria-hidden="true">02</span><div><h2>Payroll &amp; HRIS</h2><p>Clearer checks and everyday workflows</p></div></li>
+<li class="service"><span class="number" aria-hidden="true">03</span><div><h2>Internal tools</h2><p>Simpler screens and shortcuts</p></div></li></ol>
+</section>
+</div>
+<section class="archive" aria-labelledby="archive-title">
+  <header class="archive-heading"><h2 id="archive-title">A closer look.</h2><p>The previous portfolio, alongside an architectural reference.</p></header>
+  <div class="archive-grid">
+    <figure class="archive-screen">
+      <img src="assets/previous-portfolio.jpg" width="2880" height="1800" loading="lazy" alt="Previous version of Rey’s portfolio, with the original introduction and coral architecture photograph.">
+      <figcaption>Previous portfolio</figcaption>
+    </figure>
+    <figure class="archive-photo">
+      <img src="assets/staircase.jpg" width="3840" height="2160" loading="lazy" alt="A geometric stairwell and warm circular lamp, photographed by Bart Lumber.">
+      <figcaption>Architectural reference, not client work</figcaption>
+    </figure>
+  </div>
+</section>
+</main>
+<footer class="colophon"><span>Rey</span><p data-credits>Additional photograph: <a href="https://commons.wikimedia.org/wiki/File:Staircase_of_the_BGK_Building_(26620981474).jpg">Bart Lumber</a>, CC0, Wikimedia Commons. Cropped for layout.</p></footer>
+<dialog id="contact" class="overlay overlay-contact" aria-labelledby="contact-title" aria-describedby="contact-description">
+  <h2 id="contact-title">Discuss a workflow</h2>
+  <p id="contact-description">Tell me where the work gets stuck. It could be a recurring data issue, a payroll check, or an internal screen with too many steps. Contact details will be added before launch.</p>
+  <form method="dialog">
+    <button type="submit">Back to portfolio</button>
+  </form>
+</dialog>
+<dialog id="login" class="overlay overlay-login" aria-labelledby="login-title" aria-describedby="login-description">
+  <h2 id="login-title">Login</h2>
+  <p id="login-description">Sign-in is not available yet.</p>
+  <form method="dialog">
+    <button type="submit">Back to portfolio</button>
+  </form>
+</dialog>
+</body>
+</html>
