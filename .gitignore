@@ -1,0 +1,17 @@
+# Local tools and editor files
+.hallmark/
+*.swp
+*.swo
+anti-slop/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Generated archives
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
